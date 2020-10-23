@@ -15,7 +15,7 @@
  */
 
 require_once __DIR__ . '/classes/lib_script_monitor.php';
-
+require_once __DIR__ . '/config/define.php';
 
 class Daemon{
 
