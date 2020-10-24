@@ -16,7 +16,7 @@
 
 require_once __DIR__ . '/classes/lib_script_monitor.php';
 require_once __DIR__ . '/config/define.php';
-
+ 
 class Daemon{
 
     private $_startTime; // 脚本启动时间
@@ -206,7 +206,7 @@ class Daemon{
      * @return array
      */
     protected function getScripts() {
-        $config = require_once __DIR__.'/config/params.php';
+        $config = require __DIR__.'/config/params.php';
         $watchScripts  = $config['watchScripts'];
         $scripts = array();
         foreach($watchScripts as $script) {
